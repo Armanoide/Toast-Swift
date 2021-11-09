@@ -103,6 +103,7 @@ public extension UIView {
      @param title The title
      @param image The image
      @param style The style. The shared style will be used when nil
+     @param colorScheme  Choosing a Specific Interface UIUserInterfaceStyle (dark/light)
      @param completion The completion closure, executed after the toast view disappears.
             didTap will be `true` if the toast view was dismissed from a tap.
      */
