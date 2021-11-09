@@ -350,6 +350,7 @@ public extension UIView {
         
         activeToasts.add(toast)
         self.addSubview(toast)
+        self.bringSubviewToFront(toast)
         
         UIView.animate(withDuration: ToastManager.shared.style.fadeDuration, delay: 0.0, options: [.curveEaseOut, .allowUserInteraction], animations: {
             toast.alpha = 1.0
